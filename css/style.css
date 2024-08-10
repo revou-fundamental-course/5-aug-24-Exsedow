@@ -1,5 +1,33 @@
 /* ini css */
 
+body {
+    background-color :rgb(124, 136, 117);
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    /* padding: 15px 25px; */
+    /* font-size: 24px; */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    /* color: #fff; */
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 .main-title {
     text-align: center;
 }
@@ -8,9 +36,11 @@ main {
     display: flex;
 }
 
-from {
+form {
+    color : black;
     padding: 12px;
-    background-color: aliceblue;
+    border-radius :8px;
+    background-color: rgb(88, 97, 57);
 }
 
 aside {
@@ -50,5 +80,13 @@ input [type=number]{
 }
 
 footer {
+    text-align: center;
+}
+
+.hasil {
+  text-align: center;
+}
+
+.keterangan {
     text-align: center;
 }

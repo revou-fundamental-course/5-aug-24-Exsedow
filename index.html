@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -41,7 +42,7 @@
 
           <div>
             <h5>Berat Badan (kg)</h5>
-            <input type="number" />
+            <input type="number" id="berat-badan" name="berat-badan" placeholder="berat badan" />
           </div>
           <div>
             <h5>Usia (tahun)</h5>
@@ -49,11 +50,12 @@
           </div>
           <div>
             <h5>Tinggi badan (cm)</h5>
-            <input type="number" />
+            <input type="number" id="tinggi-badan" name="tinggi-badan" placeholder="tinggi badan"/>
           </div>
 
           <div class="form-btn-container">
-            <button class="button bg-hitung">Hitung BMI</button>
+            <button onclick="hitungBMI(); return false" class="button bg-hitung">Hitung BMI</button>
+
             <button class="button bg-reset">Reset</button>
           </div>
         </form>
@@ -84,35 +86,32 @@
         <section>
           <form>
               <div class="hasil">
-                  <p>
-                    Berat Badan
-                  </p>
+                  <p id="status"></p>
                   <br>
-                  <p></p>
+                  <p id="hasil"></p>
                   <br>
-                  <p>Anda Memiliki Berat badan</p>
+                  <p>Anda Memiliki Berat Badan</p>
         
                   <div class="form-btn-container">
-                    <button class="button bg-hitung">Hitung BMI</button>
+                    <button class="button bg-hitung" onclick="window.print()">Download Hasil BMI</button>
                   </div>
               </div>
           </form>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, non. Aut voluptates, ipsum error aspernatur, repellat praesentium obcaecati repellendus sunt quibusdam dolores fugit. Laborum rem harum doloremque debitis sapiente error.
+            Anda berada dalam kategori overweight atau berat badan berlebihan. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga 
+            jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untu menurunkan berat badan hingga batas normal
           </p>
           <div class="form-btn-container">
             <button class="button bg-hitung" >Konsultasi Ahli Gizi Via Aplikasi</button>
             <button class="button bg-reset">Registrasi Online Ahli Gizi</button>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam cum consectetur error eveniet facere temporibus quisquam qui rerum, eum, consequuntur excepturi dignissimos commodi expedita repudiandae sit! Quos, vel ad.
-          </p>
-
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari Kesehatan tubuh dan resiko penyakit sesorang. Anda perlu konsultasi lebih lanjur mengenai resiko dan kekhawatiran anda terkait dengan berat badan anda.
           <div class="keterangan">
               <h5>Beberapa penyakit yang berasal dari kegemukan</h5>
               <ul type="none">
-                <li>Diabeter</li>
+                <li>Diabetes</li>
                 <li>Hipertensi</li>
                 <li>Sakit Jantung</li>
                 <li>Osteoarthritis</li>

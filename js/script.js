@@ -17,9 +17,9 @@ function hitungBMI() {
 
     if (hasil < 18.5) {
         status = "Kurang dari 18.5 - Berat badan kurang";
-    } else if (hasil >= 18.5 && hasil <= 24.9) {
+    } else if (hasil >= 18.5 && hasil <= 24.99) {
         status = "18.5 - 24.9 - Berat badan normal (ideal)";
-    } else if (hasil >= 25 && hasil <= 29.9) {
+    } else if (hasil >= 25 && hasil <= 29.99) {
         status = "25 - 29.9 - Sedikit kelebihan berat badan";
     } else if (hasil >= 30) {
         status = "Lebih dari 30 - Obesitas";

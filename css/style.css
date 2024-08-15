@@ -90,3 +90,39 @@ footer {
 .keterangan {
     text-align: center;
 }
+
+@media screen and (max-width : 800px) {
+   /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE4C4;
+    color : black;
+}
+
+main {
+    display: block;
+    background-color:#DEB887;
+}
+
+ input, button {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #ff0000;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+#result {
+    font-weight: bold;
+}
+}

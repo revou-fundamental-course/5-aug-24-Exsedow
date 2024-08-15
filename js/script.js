@@ -4,6 +4,17 @@ function hitungBMI() {
     const hasil = beratBadan / ((tinggiBadan / 100) * (tinggiBadan / 100));
     let status;
 
+    try {
+        if (isNaN(beratBadan) || isNaN(tinggiBadan)) {
+            throw "empty";
+        }
+    } catch (err) {
+        document.getElementById("status").innerHTML = "Masukkan berat dan tinggi dengan benar.";
+
+        document.getElementById("hasil").innerHTML = "";
+        return;
+    }
+
     if (hasil < 18.5) {
         status = "Kurang dari 18.5 - Berat badan kurang";
     } else if (hasil >= 18.5 && hasil <= 24.9) {
